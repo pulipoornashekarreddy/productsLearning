@@ -1,0 +1,1 @@
+export const DatabaseUrl = 'mongodb+srv://testUser:testPassword@test.vn7wr18.mongodb.net/?retryWrites=true&w=majority&appName=test';
