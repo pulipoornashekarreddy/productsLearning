@@ -6,6 +6,13 @@ import router from './routes/index.js';
 var app = express();
 app.server = http.createServer(app);
 
+app.use(
+  bodyParser.json({
+    limit: '100kb',
+  }),
+);
+app.use(bodyParser.urlencoded({ extended: true }));
+
 app.use('/', router);
 
 app.server.listen(3000);
