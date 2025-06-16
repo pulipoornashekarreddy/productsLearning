@@ -10,10 +10,11 @@ export default () =>{
   })
 
   api.post('/greeting',(req, res)=>{
-  var name = req.body.name;
-   return res.status(200).json({
-      Output: `Hi ${name}`,
-    });
+    console.log(req.body);
+    var name = req.body.name;
+    return res.status(200).json({
+        Output: `Hi ${name}`,
+      });
   })
 
   return api;
